@@ -1,0 +1,110 @@
+
+.navbar{
+    height: 80px;
+    width: 100%;
+    background-color: var(  --blue-theme-nav-background-color);
+  border-radius: 10px 10px 10px 10px;
+//   border-bottom: 1px solid var(  --blue-theme-main-color );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+position: sticky;
+    &_container{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: inherit;
+        padding: 0px 20px;
+  flex: 1;
+        &_logo{
+            color: var(  --blue-theme-main-color );
+
+        }
+
+        &_menu{
+         display: flex;
+         list-style: none;
+         text-align: center;
+         
+        }
+  
+
+
+        // &::after{
+        //     content: '';
+        //     display: block;
+        //     height: 3px;
+        //     width: 0;
+        //     background: transparent;
+        //     transition: all 0.5s ease;
+        // }
+        // &:hover::after{
+        //     width: 100%;
+        //     background: var(--blue-theme-main-color);
+        // }
+       
+    }
+}
+.nav_icon{
+    display: none;
+}
+.navbar_container_menu_item{
+    line-height: 40px;
+    margin-right: 1.5rem;
+    font-size: 1.6rem;     
+               
+}
+.navbar_container_menu_item::after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: all 0.5s ease;
+}
+.navbar_container_menu_item:hover::after{
+        width: 100%;
+        background: var(--blue-theme-main-color);
+    }
+
+    .navbar_container_menu_item_links{
+        color: var(--blue-theme-main-color);
+        text-decoration: none;
+        padding: 0.5rem;
+        
+    }
+    @media only screen and (max-width:680px){
+        .navbar_container_menu{
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            border-top: 0.5px solid #fff;
+            position: absolute;
+            top: 80px;
+            left: -110%;
+            opacity: 1;
+            transition: all 0.5s ease;
+        }
+        .active{
+            background: #000000;
+            left: 0px;
+            border: 1px solid #fff;
+            // position: inherit;
+            // position: fixed;
+          
+        }
+        .navbar_container_menu_item{
+            border-bottom: 1px solid  #110101;
+            margin: 0px;
+            padding: 20px 0px;
+        }
+        .nav_icon{
+            display: block;
+            cursor: pointer;
+            color: var(--blue-theme-main-color);
+            padding-right: 20px;
+        }
+    }

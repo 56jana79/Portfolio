@@ -1,0 +1,161 @@
+.resume-container{
+    margin-bottom: 0%;
+    //  border: 1px solid rgb(21, 162, 68);
+    width: 700px;
+    margin-bottom: 0%;
+    height: 550px;
+    animation: slide 1s ease;
+    // border-radius: 10px;
+    position: sticky;
+
+}
+.educational-items{
+    //  border: 1px solid rgb(225, 36, 36);
+    padding-left: 15px;
+    color: white;
+    background-color: white;
+    color: black;
+    width: 700px;
+    height: 550px;
+   animation: slide2 1s ease;
+    position: sticky;
+   
+}
+.school-content{
+//    border: 1px solid orange;
+    gap: 6px;
+    color: white;
+    color: black;
+    position: sticky;
+}
+.project-content{
+    display: flex;
+    justify-content: center;
+    
+   font-weight: 300px;
+// border: 1px solid black;
+    color: rgb(12, 11, 11);
+    flex-direction: column;
+    gap: 6px;
+    padding-bottom: 10px;
+    // border-radius: 10px;
+    position: sticky;
+}
+.resume_content{
+    // border: 1px solid black;
+display: flex;
+justify-content: center;
+align-items: center;
+position: sticky;
+
+}
+.Technology{
+   
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 10px;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 10px;
+    position: sticky;
+}
+.career-objective{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 10px;
+    position: sticky;
+}
+.personal-details{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 10px;
+    position: static;
+    
+}
+.resume-container{
+    background-color: white;
+    position: sticky;
+
+}
+
+@media only screen and (max-width: 900px){
+    .resume_content{
+        
+            flex-direction: column;
+            width: 100%;
+            position: relative;
+    }
+.resume_content{
+    flex-direction: column;
+            width: 100%;
+            position: relative;
+}
+    .educational-items{
+        width: 100%;
+        
+       
+        }
+        .school-content{
+            width: 100%;
+        
+        }
+        .project-content{
+            width: 100%;
+           
+        }
+        .Technology{
+            width: 100%;
+           
+        }
+        .profile{
+            width: 100%;
+          
+        }
+        .career-objective{
+            width: 100%;
+          
+        }
+        .personal-details{
+            width: 100%;
+         
+          
+        }
+        .resume-container{
+            width: 100%;
+           
+        }
+
+    }
+
+    @keyframes slide {
+        0%{
+            transform: translateY(-100%);
+        }
+        100%{
+            transform: translateY(0%);
+        }
+        
+    }
+
+    @keyframes slide2 {
+        0%{
+            transform: translateY(100%);
+        }
+        100%{
+            transform: translateY(0%);
+        }
+        
+    }
+    
+
+ 
+
+

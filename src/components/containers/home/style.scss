@@ -1,0 +1,100 @@
+.home{
+    // border: 1px solid red;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color :  rgb(23, 226, 77) ;
+// &_text-wraper{
+//         display: flex;
+//         justify-content: center;
+//             align-items: center;
+        
+
+        
+//     }
+
+}
+.home_text-wrapper{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        
+}
+
+h1{
+    color: rgb(23, 226, 77);
+    margin: 0px;
+    font-weight: 500;
+    font-size: 8rem;
+    text-align: center;
+    line-height: 10rem;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: EffectAnimaation 2.5s  steps(30,end);
+}
+.home_content-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+button{
+    cursor: pointer;
+    padding: 10px   10px;
+    font-size: 2rem;
+    background: transparent;
+    color: rgb(17, 149, 17);
+    background-color: rgb(12, 14, 13);
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid rgb(23, 226, 77);
+    transition: 0.5s;
+    font-weight: 500px;
+}
+
+button:hover{
+    background-color: rgb(23, 226, 77);
+    color: rgb(12, 14, 13);
+    border: 1px solid rgb(12, 14, 13);
+    transition: 0.5s;
+}
+
+
+@media only screen and (max-width: 550px){
+    .home_text-wrapper h1{
+        font-weight: 3rem;
+        line-height: 5rem;
+    
+    }
+    
+}
+@media only screen and (max-width:551px)  and (max-width: 768px){
+    .home_text-wrapper h1{
+        font-weight: 4rem;
+        line-height: 6rem;
+    }
+    
+}
+@media only screen and (min-width:769px)  and (max-width: 999px){
+  
+    .home_text-wrapper h1{
+        font-weight: 6rem;
+        line-height: 8rem;
+    }
+}
+@keyframes EffectAnimaation{
+    0%{
+        width: 0;
+        opacity: 0;
+        
+    }
+    100%{
+        width: 100%;
+        opacity: 1;
+        
+    }
+}
+

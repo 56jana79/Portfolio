@@ -1,0 +1,22 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px dotted rgb(12, 180, 12);
+    position: sticky;
+}
+
+h2{
+    font-size: 36px;
+    font-weight: 700;
+   letter-spacing: 1.5px;
+    margin-left: 20px;
+    text-transform: capitalize;
+    color: rgb(23, 185, 14);
+    display: flex;
+    flex-grow: 1;
+}
+
+span{
+    color: rgb(12, 180, 12);
+}
