@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['<offending-module-name>'] // 👈 replace this!
+      external: ['portfolio'] // 👈 replace this!
     }
   }
 })
